@@ -40,6 +40,94 @@
         </div>
     </section>
 
+    <section class="py-24 relative overflow-hidden">
+    <div class="absolute -right-24 top-1/4 w-96 h-96 bg-green-500/5 blur-[120px] rounded-full"></div>
+
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="flex flex-col lg:flex-row items-center gap-16">
+
+            <div class="w-full lg:w-1/2">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-green-500/30 to-transparent rounded-[32px] blur opacity-25 group-hover:opacity-100 transition duration-1000"></div>
+                    <div class="relative bg-black rounded-[32px] overflow-hidden border border-white/10 shadow-2xl">
+
+                        <img src="{{ asset('images/WhatsApp Image 2026-01-18 at 08.55.20.jpeg') }}"
+                             alt="Flyer Trading Consistente"
+                             class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 space-y-8">
+                <div>
+                    <h3 class="text-green-500 font-bold uppercase tracking-[4px] text-xs mb-4 italic">📊 TRADING CONSISTENTE DO ANO</h3>
+                    <h2 class="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter leading-tight">
+                        KambambiForex <span class="text-green-500">Apresenta</span>
+                    </h2>
+                </div>
+
+                <div class="space-y-6 text-gray-400">
+                    <p class="text-lg">Evento educacional focado em <strong>disciplina e gestão de risco</strong> para traders angolanos.</p>
+
+                    <p class="text-sm">Para participar, basta seres nosso parceiro Exness. Se já tens conta, podes mudar de parceiro agora.</p>
+
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="https://one.exnessonelink.com/a/5upnk749jz" target="_blank" class="py-4 px-8 bg-green-500 text-black font-black rounded-xl hover:scale-105 transition-all shadow-lg uppercase tracking-widest text-xs">
+                            Criar Conta Nova
+                        </a>
+                        <button onclick="document.getElementById('modalInstrucoes').classList.remove('hidden')" class="py-4 px-8 bg-white/5 border border-white/10 text-white font-bold rounded-xl hover:bg-white/10 transition-all uppercase tracking-widest text-xs">
+                            Como Mudar de Parceiro?
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="modalInstrucoes" class="fixed inset-0 z-[999] hidden flex items-center justify-center p-6">
+    <div class="absolute inset-0 bg-black/90 backdrop-blur-sm" onclick="this.parentElement.classList.add('hidden')"></div>
+
+    <div class="relative bg-[#111] border border-white/10 p-8 rounded-[32px] max-w-xl w-full shadow-2xl overflow-y-auto max-h-[90vh]">
+        <button onclick="this.parentElement.parentElement.classList.add('hidden')" class="absolute top-6 right-6 text-gray-500 hover:text-white text-2xl">&times;</button>
+
+        <h3 class="text-green-500 font-black text-2xl uppercase mb-6 tracking-tighter text-center">Como Mudar de Parceiro</h3>
+
+        <div class="space-y-6">
+            <div class="flex gap-4">
+                <span class="w-8 h-8 bg-green-500 text-black rounded-full flex items-center justify-center font-bold shrink-0">1</span>
+                <p class="text-gray-300 text-sm">Vá ao <strong>suporte da Exness</strong> e envie uma mensagem dizendo: <span class="text-white italic">"Quero mudar de parceiro"</span>.</p>
+            </div>
+
+            <div class="flex gap-4">
+                <span class="w-8 h-8 bg-green-500 text-black rounded-full flex items-center justify-center font-bold shrink-0">2</span>
+                <p class="text-gray-300 text-sm">Eles enviarão um link. No formulário, em <strong>Motivo</strong>, escolha <span class="text-white font-bold">"Formação"</span>.</p>
+            </div>
+
+            <div class="flex gap-4">
+                <span class="w-8 h-8 bg-green-500 text-black rounded-full flex items-center justify-center font-bold shrink-0">3</span>
+                <p class="text-gray-300 text-sm">No campo do <strong>Link do Parceiro</strong>, coloque este link:<br>
+                <code class="block bg-black p-2 mt-2 text-green-500 break-all text-xs rounded border border-white/5">https://one.exnessonelink.com/a/5upnk749jz</code></p>
+            </div>
+
+            <div class="flex gap-4">
+                <span class="w-8 h-8 bg-green-500 text-black rounded-full flex items-center justify-center font-bold shrink-0">4</span>
+                <p class="text-gray-300 text-sm">Na 3ª opção, pode colocar o link deste site ou um comentário à sua escolha.</p>
+            </div>
+
+            <div class="bg-green-500/10 border border-green-500/20 p-4 rounded-xl">
+                <p class="text-green-500 text-xs font-bold uppercase text-center italic">
+                    ✅ Após 3 dias, crie uma nova conta de negociação e já estará na nossa equipe!
+                </p>
+            </div>
+        </div>
+
+        <button onclick="this.parentElement.parentElement.classList.add('hidden')" class="w-full mt-8 py-4 bg-white/5 text-white font-bold rounded-xl hover:bg-white/10 transition-all text-xs uppercase tracking-widest">
+            Entendido, Fechar
+        </button>
+    </div>
+</div>
+
    <section class="py-20 bg-black/50 border-y border-white/10">
     <div class="container mx-auto px-6">
         <h3 class="text-center text-gray-500 text-[10px] uppercase tracking-[5px] mb-12 font-bold">Referências de Execução</h3>

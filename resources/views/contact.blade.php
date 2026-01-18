@@ -97,7 +97,7 @@
                             </div>
                             <div class="flex items-center gap-4 group">
                                 <div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-green-500 border border-white/10 group-hover:bg-green-500 group-hover:text-black transition-all font-mono">📧</div>
-                                <a href="mailto:kambabiforex@gmail.com" class="text-xl text-white font-light tracking-widest hover:text-green-500 transition-colors">kambabiforex@gmail.com</a>
+                                <a href="mailto:kambabiforex@gmail.com" class="text-xl text-white font-light tracking-widest hover:text-green-500 transition-colors">kambambiforex@gmail.com</a>
                             </div>
                         </div>
                     </div>
