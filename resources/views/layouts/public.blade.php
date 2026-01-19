@@ -50,8 +50,17 @@
 
 
             </div>
+            <div id="menu-mobile" class="hidden md:hidden mt-6 space-y-4">
+                <a href="{{ url('/') }}" class="block text-sm hover:text-green-500">Home</a>
+                <a href="{{ url('/sobre') }}" class="block text-sm hover:text-green-500">Sobre</a>
+                <a href="{{ url('/servicos') }}" class="block text-sm hover:text-green-500">Serviços</a>
+                <a href="{{ url('/galeria') }}" class="block text-sm hover:text-green-500">Galeria</a>
+                <a href="{{ url('/contato') }}" class="block text-sm hover:text-green-500">Contato</a>
+            </div>
 
-            <button class="md:hidden text-white">
+
+           <button id="menu-toggle" class="md:hidden text-white">
+
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
@@ -97,6 +106,16 @@
         </div>
     </div>
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu-mobile");
+
+    toggle.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+    });
+});
+</script>
 
 </body>
 </html>
