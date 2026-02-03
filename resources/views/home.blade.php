@@ -39,6 +39,48 @@
 </div>
         </div>
     </section>
+    <section class="py-20 bg-black border-t border-green-500/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+        <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
+            Kambambi Forex <span class="text-green-500">Academy</span>
+        </h2>
+
+        <p class="text-gray-400 max-w-2xl mx-auto mb-12 text-lg italic">
+            "Ensinando, mentoreando e mostrando a transparência do mercado financeiro. Aqui não vendemos sonhos, mostramos a verdadeira realidade."
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+
+            <div class="bg-gray-900 p-8 rounded-2xl border border-green-500/20 hover:border-green-500 transition-all group">
+                <h3 class="text-2xl font-bold text-white mb-4 italic">Modelo Presencial</h3>
+                <p class="text-4xl font-extrabold text-green-500 mb-4">200.000 <span class="text-sm text-gray-400">KZ</span></p>
+                <p class="text-gray-400 mb-6 text-sm">Acesso direto, acompanhamento físico e networking real.</p>
+            </div>
+
+            <div class="bg-gray-900 p-8 rounded-2xl border border-green-500/20 hover:border-green-500 transition-all">
+                <h3 class="text-2xl font-bold text-white mb-4 italic">Modelo Online</h3>
+                <p class="text-4xl font-extrabold text-green-500 mb-4">80.000 <span class="text-sm text-gray-400">KZ</span></p>
+                <p class="text-gray-400 mb-6 text-sm">Aulas ao vivo, gravadas e suporte digital de qualquer lugar.</p>
+            </div>
+
+        </div>
+
+        <div class="bg-green-500 rounded-3xl p-10 max-w-4xl mx-auto shadow-[0_0_50px_rgba(34,197,94,0.2)]">
+            <h4 class="text-2xl md:text-3xl font-bold text-black mb-4">
+                Queres pertencer à melhor academia de África?
+            </h4>
+            <p class="text-green-950 font-medium mb-8">
+                Clica no link abaixo e entra agora na nossa comunidade do WhatsApp para garantir a tua vaga.
+            </p>
+            <a href="https://wa.me/SEU_NUMERO_AQUI" target="_blank"
+               class="inline-block bg-black text-white font-bold px-10 py-4 rounded-full text-lg hover:scale-105 transition-transform uppercase tracking-wider">
+                Entrar na Comunidade WhatsApp
+            </a>
+        </div>
+
+    </div>
+</section>
 
     <section class="py-24 relative overflow-hidden">
     <div class="absolute -right-24 top-1/4 w-96 h-96 bg-green-500/5 blur-[120px] rounded-full"></div>
