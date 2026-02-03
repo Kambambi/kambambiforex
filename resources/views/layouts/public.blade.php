@@ -14,16 +14,22 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         .glass-nav {
-            background: rgba(0, 0, 0, 0.7);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(34, 197, 94, 0.2);
+        }
+        /* Ajuste para o menu mobile não sumir no topo */
+        #menu-mobile {
+            top: 79px; /* Altura exata do header */
+            max-height: calc(100vh - 80px);
+            overflow-y: auto;
         }
     </style>
 </head>
 <body class="bg-black text-gray-200 antialiased selection:bg-green-500 selection:text-black">
 
-    <header class="fixed top-0 w-full z-50 glass-nav">
+    <header class="fixed top-0 w-full z-[100] glass-nav">
         <nav class="container mx-auto px-6 h-20 flex items-center justify-between">
 
             <a href="{{ url('/') }}" class="group flex flex-col leading-none">
@@ -44,78 +50,65 @@
 
                 <div class="h-4 w-[1px] bg-gray-700"></div>
 
-                <a href="{{ url('/calculadora') }}" class="text-xs bg-white/5 border border-white/10 px-3 py-1.5 rounded-lg hover:bg-green-500 hover:text-black hover:border-green-500 transition-all">
+                <a href="{{ url('/calculadora') }}" class="text-xs bg-white/5 border border-white/10 px-4 py-2 rounded-lg hover:bg-green-500 hover:text-black hover:border-green-500 transition-all font-bold">
                     Calculadora
                 </a>
-
-
-            </div>
-            <div id="menu-mobile" class="hidden md:hidden mt-6 space-y-4">
-                <a href="{{ url('/') }}" class="block text-sm hover:text-green-500">Home</a>
-                <a href="{{ url('/sobre') }}" class="block text-sm hover:text-green-500">Sobre</a>
-                <a href="{{ url('/servicos') }}" class="block text-sm hover:text-green-500">Serviços</a>
-                <a href="{{ url('/galeria') }}" class="block text-sm hover:text-green-500">Galeria</a>
-                <a href="{{ url('/contato') }}" class="block text-sm hover:text-green-500">Contato</a>
             </div>
 
-
-           <button id="menu-toggle" class="md:hidden text-white">
-
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            <button id="menu-toggle" class="md:hidden text-green-500 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
         </nav>
+
+        <div id="menu-mobile" class="hidden md:hidden absolute left-0 w-full bg-black/95 border-b border-green-500/30 shadow-2xl">
+            <div class="flex flex-col px-8 py-8 space-y-6">
+                <a href="{{ url('/') }}" class="text-lg font-semibold text-white border-b border-white/5 pb-2">Home</a>
+                <a href="{{ url('/sobre') }}" class="text-lg font-semibold text-white border-b border-white/5 pb-2">Sobre</a>
+                <a href="{{ url('/servicos') }}" class="text-lg font-semibold text-white border-b border-white/5 pb-2">Serviços</a>
+                <a href="{{ url('/galeria') }}" class="text-lg font-semibold text-white border-b border-white/5 pb-2">Galeria</a>
+                <a href="{{ url('/contato') }}" class="text-lg font-semibold text-white border-b border-white/5 pb-2">Contato</a>
+
+                <a href="{{ url('/calculadora') }}" class="text-center text-md bg-green-500 text-black py-4 rounded-xl font-black uppercase tracking-widest shadow-lg shadow-green-500/20">
+                    Calculadora
+                </a>
+            </div>
+        </div>
     </header>
 
-    <main>
-        @yield('content')
+    <main class="pt-20"> @yield('content')
     </main>
-<footer class="bg-[#050505] border-t border-white/5 py-12">
-    <div class="container mx-auto px-6 text-center">
-        <div class="mb-8">
-            <div class="text-2xl font-black text-white tracking-tighter mb-2">
-                KAMBAMBI<span class="text-green-500">FOREX</span>
-            </div>
-            <p class="text-gray-500 text-[10px] uppercase tracking-[4px]">Disciplina • Fé • Consistência</p>
-        </div>
 
-        <div class="flex flex-wrap justify-center gap-6 mb-10">
-            <a href="#" class="group flex items-center gap-2 text-gray-400 hover:text-[#1877F2] transition-all">
-                <span class="text-xs font-bold uppercase tracking-widest">Facebook</span>
-            </a>
-            <a href="#" class="group flex items-center gap-2 text-gray-400 hover:text-[#E4405F] transition-all">
-                <span class="text-xs font-bold uppercase tracking-widest">Instagram</span>
-            </a>
-            <a href="#" class="group flex items-center gap-2 text-gray-400 hover:text-[#FF0000] transition-all">
-                <span class="text-xs font-bold uppercase tracking-widest">YouTube</span>
-            </a>
-            <a href="#" class="group flex items-center gap-2 text-gray-400 hover:text-white transition-all">
-                <span class="text-xs font-bold uppercase tracking-widest">X (Twitter)</span>
-            </a>
-            <a href="#" class="group flex items-center gap-2 text-gray-400 hover:text-[#00f2ea] transition-all">
-                <span class="text-xs font-bold uppercase tracking-widest">TikTok</span>
-            </a>
-            <a href="#" class="group flex items-center gap-2 text-gray-400 hover:text-[#0A66C2] transition-all">
-                <span class="text-xs font-bold uppercase tracking-widest">LinkedIn</span>
-            </a>
-        </div>
+    <footer class="bg-[#050505] border-t border-white/5 py-12">
+        </footer>
 
-        <div class="text-gray-600 text-[10px] uppercase tracking-widest border-t border-white/5 pt-8">
-            © {{ date('Y') }} KambambiForex. O céu é o limite.
-        </div>
-    </div>
-</footer>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.getElementById("menu-toggle");
-    const menu = document.getElementById("menu-mobile");
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggle = document.getElementById("menu-toggle");
+            const menu = document.getElementById("menu-mobile");
+            const icon = document.getElementById("menu-icon");
 
-    toggle.addEventListener("click", function () {
-        menu.classList.toggle("hidden");
-    });
-});
-</script>
+            toggle.addEventListener("click", function () {
+                menu.classList.toggle("hidden");
 
+                // Muda o ícone de hambúrguer para um 'X' quando aberto
+                if (menu.classList.contains("hidden")) {
+                    icon.setAttribute("d", "M4 6h16M4 12h16m-7 6h7");
+                } else {
+                    icon.setAttribute("d", "M6 18L18 6M6 6l12 12");
+                }
+            });
+
+            // Fecha o menu ao clicar num link
+            const links = menu.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    icon.setAttribute("d", "M4 6h16M4 12h16m-7 6h7");
+                });
+            });
+        });
+    </script>
 </body>
 </html>

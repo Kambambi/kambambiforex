@@ -73,7 +73,7 @@
             <p class="text-green-950 font-medium mb-8">
                 Clica no link abaixo e entra agora na nossa comunidade do WhatsApp para garantir a tua vaga.
             </p>
-            <a href="https://wa.me/SEU_NUMERO_AQUI" target="_blank"
+            <a href="https://chat.whatsapp.com/KIDmnY281l5L0OYkyfiGce" target="_blank"
                class="inline-block bg-black text-white font-bold px-10 py-4 rounded-full text-lg hover:scale-105 transition-transform uppercase tracking-wider">
                 Entrar na Comunidade WhatsApp
             </a>
@@ -93,7 +93,7 @@
                     <div class="absolute -inset-1 bg-gradient-to-r from-green-500/30 to-transparent rounded-[32px] blur opacity-25 group-hover:opacity-100 transition duration-1000"></div>
                     <div class="relative bg-black rounded-[32px] overflow-hidden border border-white/10 shadow-2xl">
 
-                        <img src="{{ asset('images/WhatsApp Image 2026-01-18 at 08.55.20.jpeg') }}"
+                        <img src="{{ asset('images/WhatsApp Image 2026-02-02 at 16.55.03.jpeg') }}"
                              alt="Flyer Trading Consistente"
                              class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700">
                     </div>
