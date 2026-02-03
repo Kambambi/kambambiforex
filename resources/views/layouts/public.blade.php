@@ -79,10 +79,27 @@
 
     <main class="pt-20"> @yield('content')
     </main>
+<footer class="bg-[#050505] border-t border-white/5 py-12">
+    <div class="container mx-auto px-6 text-center">
+        <div class="mb-8">
+            <div class="text-2xl font-black text-white tracking-tighter mb-2">
+                KAMBAMBI<span class="text-green-500">FOREX</span>
+            </div>
+            <p class="text-gray-500 text-[10px] uppercase tracking-[4px]">Disciplina • Fé • Consistência</p>
+        </div>
 
-    <footer class="bg-[#050505] border-t border-white/5 py-12">
-        </footer>
+        <div class="flex flex-wrap justify-center gap-6 mb-10">
+            <a href="https://wa.me/244936461548" target="_blank" class="text-gray-400 hover:text-green-500 transition-all uppercase text-[10px] font-bold tracking-widest">WhatsApp</a>
+            <a href="https://www.instagram.com/kambambiforex" target="_blank" class="text-gray-400 hover:text-pink-500 transition-all uppercase text-[10px] font-bold tracking-widest">Instagram</a>
+            <a href="https://www.youtube.com/@kambambiforex" target="_blank" class="text-gray-400 hover:text-red-600 transition-all uppercase text-[10px] font-bold tracking-widest">YouTube</a>
+            <a href="https://www.facebook.com/share/1NGKEngoQJ/" target="_blank" class="text-gray-400 hover:text-blue-600 transition-all uppercase text-[10px] font-bold tracking-widest">Facebook</a>
+        </div>
 
+        <div class="text-gray-600 text-[10px] uppercase tracking-widest border-t border-white/5 pt-8">
+            © {{ date('Y') }} KambambiForex. O céu é o limite.
+        </div>
+    </div>
+</footer>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const toggle = document.getElementById("menu-toggle");
